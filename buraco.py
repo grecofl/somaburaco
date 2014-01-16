@@ -58,7 +58,7 @@ valor_partida [3.000, 5.000, 10.000]
 
 print ('Defina o Tipo de Contagem que será utilizada')
 print ('A contagem CONTÍNUA coloca os valores num único campo, sendo a soma dos pontos da mesa e de cartas da rodada. \n\ A contagem PARCIAL coloca os valores em dois campos diferentes, sendo um para os pontos de mesa e outro para os pontos de cartas da rodada')
-tipo_contagem [CONTÍNUA, PARCIAL]
+tipo_contagem ["CONTÍNUA", "PARCIAL"]
 
 # Define o Valor de Pontos para as Duplas para o Início da Partida
 
