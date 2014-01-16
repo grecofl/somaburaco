@@ -55,6 +55,7 @@ dupla02 = jogador03,jogador04
 
 print ('Defina o Valor da Partida')
 valor_partida [3.000, 5.000, 10.000]
+total_partida = valor_partida
 
 print ('Defina o Tipo de Contagem que será utilizada')
 print ('A contagem CONTÍNUA coloca os valores num único campo, sendo a soma dos pontos da mesa e de cartas da rodada. \n\ A contagem PARCIAL coloca os valores em dois campos diferentes, sendo um para os pontos de mesa e outro para os pontos de cartas da rodada')
@@ -71,14 +72,14 @@ total_vulneravel == valor_partida/2
 
 # Realiza o Somatório da Rodada Através do Tipo de Contagem Selecionada
 
-if tipo_contagem == CONTÍNUA
+if tipo_contagem == CONTÍNUA:
 
     then
     
         rodada_dupla01 = input ('Informe o Valor de Pontos obtidos na Rodada pela Dupla 01: ')
         rodada_dupla02 = input ('Informe o Valor de Pontos obtidos na Rodada pela Dupla 02: ')
 
-elif tipo_contagem == PARCIAL
+elif tipo_contagem == PARCIAL:
 
     then
         # Informa os Valores de Pontos da Rodada Obtidos pela Dupla 01
@@ -100,26 +101,26 @@ total_dupla02 = total_dupla02 + rodada_dupla02
 
 # Verifica condição de Vulnerabilidade e Informa condição ao Usuário
 
-if total_dupla01 > total_vulneravel
+if total_dupla01 > total_vulneravel:
                           
-   elif total_dupla02 > total_vulneravel
+   elif total_dupla02 > total_vulneravel:
                           
         print ('As Duplas estão vulneráveis!!!')
    
-    else print ('A Dupla 01 está vulnerável!!!')
+    else print ('A Dupla 01 está vulnerável!!!'):
     
-    else if total_dupla02 > total_vulneravel
+    else if total_dupla02 > total_vulneravel:
 
     print ('A Dupla 02 está Vulnerável!!!')
 
 # Verifica o fim da partida
 
-if total_dupla01 > total_partida
+if total_dupla01 > total_partida:
 
-    elif total_dupla01 > total_dupla02
+    elif total_dupla01 > total_dupla02:
         
         print ('A Dupla 01 venceu a partida!!!')
     
-    else if total_dupla02 > total_partida
+    else if total_dupla02 > total_partida:
                               
         print ('A Dupla 02 venceu a partida!!!')
