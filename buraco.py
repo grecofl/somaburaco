@@ -53,9 +53,9 @@ dupla02 = jogador03, jogador04
 
 # Seleciona o Valor da Partida e Tipo de Contagem de Pontos
 
-print ('Defina o Valor da Partida: '))
-valor_partida = [3.000, 5.000, 10.000]
-total_partida = valor_partida
+print ('Defina o Valor da Partida: ')
+valor_partida = ["3.000", "5.000", "10.000"]
+total_partida = int (valor_partida)
 
 print ('Defina o Tipo de Contagem que será utilizada')
 print ('A contagem CONTÍNUA coloca os valores num único campo, sendo a soma dos pontos da mesa e de cartas da rodada. \n\ A contagem PARCIAL coloca os valores em dois campos diferentes, sendo um para os pontos de mesa e outro para os pontos de cartas da rodada')
